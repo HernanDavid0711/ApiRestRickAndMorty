@@ -1,0 +1,27 @@
+.n-t-c{
+    display: flex;
+    justify-content: center;
+}
+
+.c-s{
+    position: sticky;
+    top: 0%;
+}
+
+.det-img{
+    margin-bottom: 3%;
+}
+
+.char-det-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hidd {
+    display: none!important;
+}
+
+#not {
+    margin-bottom: 2%;
+}

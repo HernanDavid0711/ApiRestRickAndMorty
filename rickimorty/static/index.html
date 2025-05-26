@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./main.js"></script>
+    <link rel="stylesheet" href="./bulma.min.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-half">
+                    <figure>
+                        <img src="./logo.png" alt="">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="n-t-c">
+                <div>
+                    <h1 class="title">Rick y Morty API</h1>
+                    <p class="subtitle">Consultas hechas en <strong>Golang</strong>!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <div id="not" class="notification is-danger hidd">
+            <button class="delete" onclick="closeNot()"></button>
+            <div id="not-text"></div>
+        </div>
+        <div class="buttons n-t-c">
+            <button class="button is-primary" onclick="getChar()">Consultar personajes</button>
+            <button class="button is-warning" onclick="syncChar()">Sync personajes</button>
+            <button class="button is-danger" onclick="delChar()">Limpiar base de datos</button>
+        </div>
+    </div>
+    <section class="section">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-half">
+                    <table class="table is-fullwidth">
+                        <thead>
+                            <tr>
+                                <th><abbr>ID</abbr></th>
+                                <th><abbr>Nombre</abbr></th>
+                                <th><abbr>Foto</abbr></th>
+                                <th><abbr>Acciones</abbr></th>
+                            </tr>
+                        </thead>
+                        <tfoot>
+                            <tr>
+                                <th><abbr>ID</abbr></th>
+                                <th><abbr>Nombre</abbr></th>
+                                <th><abbr>Foto</abbr></th>
+                                <th><abbr>Acciones</abbr></th>
+                            </tr>
+                        </tfoot>
+                        <tbody id="table-container"></tbody>
+                    </table>
+                </div>
+                <div class="column is-half">
+                    <div class="c-s">
+                        <section class="section">
+                            <div class="container n-t-c">
+                                <h1 class="title has-text-primary">Detalles</h1>
+                            </div>
+                        </section>
+                        <div id="char-det"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
